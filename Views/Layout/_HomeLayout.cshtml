@@ -5,7 +5,7 @@
     <title>New Store A Ecommerce Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
     <link href="~/Content/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
+    <script src="~/Content/js/jquery.min.js"></script>
     <!-- Custom Theme files -->
     <!--theme-style-->
     <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -23,6 +23,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="text/javascript" src="~/Content/js/memenu.js"></script>
     <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
     <script src="~/Content/js/simpleCart.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
 </head>
 <body>
     <!--header-->
@@ -195,15 +197,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
             <script src="js/responsiveslides.min.js"></script>
             <script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 700,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
+                $(function () {
+                    $("#slider").responsiveSlides({
+                        auto: true,
+                        nav: true,
+                        speed: 700,
+                        namespace: "callbacks",
+                        pager: true,
+                    });
+                });
             </script>
             <div id="top" class="callbacks_container">
                 <ul class="rslides danger" id="slider">
@@ -218,7 +220,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </li>
                     <li>
 
-                        <div class="banner-text" >
+                        <div class="banner-text">
                             <h3>There are many variations </h3>
                             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor .</p>
                             <a href="single.html">Learn More</a>
@@ -321,9 +323,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="clearfix"> </div>
                 </div>
             </div>-->
-            <!----->
-
-            <!--<div class="content-top-bottom">
+        <!----->
+        <!--<div class="content-top-bottom">
                 <h2>Featured Collections</h2>
                 <div class="col-md-6 men">
                     <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
@@ -380,16 +381,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>-->
         <!---->
         @*<div class="content-bottom">
-            <ul>
-                <li><a href="#"><img class="img-responsive" src="images/lo.png" alt=""></a></li>
-                <li><a href="#"><img class="img-responsive" src="images/lo1.png" alt=""></a></li>
-                <li><a href="#"><img class="img-responsive" src="images/lo2.png" alt=""></a></li>
-                <li><a href="#"><img class="img-responsive" src="images/lo3.png" alt=""></a></li>
-                <li><a href="#"><img class="img-responsive" src="images/lo4.png" alt=""></a></li>
-                <li><a href="#"><img class="img-responsive" src="images/lo5.png" alt=""></a></li>
-                <div class="clearfix"> </div>
-            </ul>
-        </div>*@
+                <ul>
+                    <li><a href="#"><img class="img-responsive" src="images/lo.png" alt=""></a></li>
+                    <li><a href="#"><img class="img-responsive" src="images/lo1.png" alt=""></a></li>
+                    <li><a href="#"><img class="img-responsive" src="images/lo2.png" alt=""></a></li>
+                    <li><a href="#"><img class="img-responsive" src="images/lo3.png" alt=""></a></li>
+                    <li><a href="#"><img class="img-responsive" src="images/lo4.png" alt=""></a></li>
+                    <li><a href="#"><img class="img-responsive" src="images/lo5.png" alt=""></a></li>
+                    <div class="clearfix"> </div>
+                </ul>
+            </div>*@
         @RenderBody()
     </div>
     <div class="footer">
@@ -442,3 +443,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </body>
 </html>
+
