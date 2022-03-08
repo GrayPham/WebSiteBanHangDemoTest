@@ -1,0 +1,61 @@
+﻿@using WebSiteBanHang.Models;
+@model ThanhVien
+@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Layout/_ProductLayout.cshtml";
+}
+<div class=" container">
+    <div class=" register">
+        <h1>Đăng ký thành viên </h1>
+        @using (Html.BeginForm())
+        {
+            <div class="col-md-6 register-top-grid">
+                <h3>Thông tin cá nhân</h3>
+                <div>
+                    <span>Tài khoản</span>
+                    @Html.TextBox("TaiKhoan")
+                </div>
+                <div>
+                    <span>Họ và Tên</span>
+                    @Html.TextBox("HoTen")
+                </div>
+                <div>
+                    <span>Địa Chỉ</span>
+                    @Html.TextBox("DiaChi")
+                </div>
+                <div>
+                    <span>Email </span>
+                    @Html.TextBox("Email")
+                </div>
+                @*<a class="news-letter" href="#">
+                    <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Tài Khoản Admin</label>
+                </a>*@
+            </div>
+            <div class="col-md-6 register-bottom-grid register-top-grid">
+                <h3>Login information</h3>
+                <div>
+                    <span>Mật Khẩu</span>
+                    @Html.Password("MatKhau")
+                </div>
+                <div>
+                    <span>Xác Nhận Mật Khẩu</span>
+                    @Html.Password("NhapLaiMatKhau")
+                </div>
+                <div>
+                    <span>Câu Hỏi Bí Mật</span>
+                    @Html.TextBox("CauHoi")
+                </div>
+                <div>
+                    <span>Đáp án</span>
+                    @Html.TextBox("CauTraLoi")
+                </div>
+                <input type="submit" value="Xác Nhận">
+
+            </div>
+            <div class="clearfix"> </div>
+        }
+
+        
+
+    </div>
+</div>
